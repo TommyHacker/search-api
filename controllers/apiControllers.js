@@ -1,21 +1,34 @@
-const { fetchData } = require('../helpers/apiHelpers');
+const { randomiser } = require('../helpers/apiHelpers');
+const dataArr = require('../models/apiData');
 
 exports.getOne = (req, res) => {
-	const { id } = req.params;
-	const result = fetchData(id);
-	console.log(result);
-	res.redirect('/');
+	try {
+		const { id } = req.params;
+		const data = dataArr[id];
+		res.render('animalPage', { data });
+	} catch (err) {
+		console.log(err.message);
+		res.send('something went wrong');
+	}
+};
 
-	// try {
-	// 	const { id } = req.params;
-	// 	if (!apiData[id]) {
-	// 		const message = 'could not find page with that ID.';
-	// 		res.render('index', { message });
-	// 	} else {
-	// 		res.render(`infoPage`, { message: 'found data', data: apiData[id] });
-	// 	}
-	// } catch (err) {
-	// 	console.log(err.message);
-	// 	res.render('index', { message: err.message });
-	// }
+exports.random = (req, res) => {
+	try {
+		const val = randomiser();
+		const data = dataArr[val];
+		res.render('animalPage', { data });
+	} catch (err) {
+		console.log(err.message);
+		res.send(' something went wrong.');
+	}
+};
+
+exports.all = async (req, res) => {
+	try {
+		const data = await dataArr;
+		res.render('allAnimals', { data });
+	} catch (err) {
+		console.log(err.message);
+		res.send('something went wrong.');
+	}
 };

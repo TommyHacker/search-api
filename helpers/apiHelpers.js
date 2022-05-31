@@ -8,3 +8,8 @@ const apiData = require('../models/apiData');
 exports.fetchData = (id) => {
 	console.log(apiData);
 };
+
+exports.randomiser = () => {
+	let num = Math.floor(Math.random() * 10);
+	return num;
+};

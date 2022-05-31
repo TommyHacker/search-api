@@ -28,7 +28,7 @@ app.use('/api', apiRoutes);
 app.get('/', (req, res) => {
 	try {
 		console.log('home route gotten.');
-		res.render('index', { message: '' });
+		res.render('index', { message: '', data: '' });
 	} catch (err) {
 		console.log(err.message);
 		res.send('something went wrong, try again.');
