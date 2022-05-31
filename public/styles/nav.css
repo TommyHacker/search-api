@@ -22,3 +22,7 @@ ul > a, ul > img, ul>button {
     padding: 0;
     margin: 1em;
 }
+
+.header-appIcon {
+    box-shadow: 0 0 10px aliceblue;
+}
