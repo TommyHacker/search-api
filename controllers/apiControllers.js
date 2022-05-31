@@ -22,9 +22,9 @@ exports.getOne = (req, res) => {
 	// }
 };
 
-exports.random = async (req, res) => {
+exports.random =  (req, res) => {
 	const val = randomiser();
-	const data = await dataArr[val];
+	const data =  dataArr[val];
 	console.log('hit random route');
 	console.log(data);
 	// grab a random calss object to serve
@@ -34,5 +34,5 @@ exports.random = async (req, res) => {
 
 exports.all = async (req, res) => {
 	const data = await dataArr;
-	res.render('index', { data});
+	res.render('allAnimals', { data });
 };
