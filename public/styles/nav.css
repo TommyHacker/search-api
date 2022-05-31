@@ -1,0 +1,28 @@
+a {
+    margin: 5px;
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-bar{
+   display: flex; 
+   align-items: center;
+}
+
+ul > a, ul > img, ul>button {
+    padding: 0;
+    margin: 1em;
+}
+
+.header-appIcon {
+    box-shadow: 0 0 10px aliceblue;
+}
