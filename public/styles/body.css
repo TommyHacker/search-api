@@ -1,31 +1,32 @@
-section{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 5vh;
+section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 5vh;
 }
 
 h1 {
-    margin-bottom: 5vh;
-    font-size: 5.5rem ;
+	margin-bottom: 5vh;
+	font-size: 5.5rem;
 }
 
-.button-container{
-    padding-top: 3vh;
+.button-container {
+	padding-top: 3vh;
 }
 
-button{
-    background-color: #f8f9fa;
-    border-radius: 5px;
-    border: none;
-    height: 30px;
-    padding: 0 10px;
-    margin: 0 5px;
+.button-container .btn {
+	background-color: #f8f9fa;
+	border-radius: 5px;
+	text-decoration: none;
+	border: none;
+	height: 30px;
+	padding: 10px;
+	margin: 0 5px;
 }
 
-button:hover{
-    cursor: pointer;
-    box-shadow: 0 0 10px gainsboro;
+.button-container .btn:hover {
+	cursor: pointer;
+	box-shadow: 0 0 10px gainsboro;
 }
 
 /* .search-btn {
