@@ -3,12 +3,6 @@
 // const apiKey = process.env.API_KEY;
 // const url = `https://customsearch.googleapis.com/customsearch/v1?key=${apiKey}HTTP/1.1/`;
 
-const apiData = require('../models/apiData');
-
-exports.fetchData = (id) => {
-	console.log(apiData);
-};
-
 exports.randomiser = () => {
 	let num = Math.floor(Math.random() * 10);
 	return num;
