@@ -1,6 +1,6 @@
 <%- layout("/layouts/boilerplate.ejs") %>
 
-<div class="page-container">
+<div class="page-container grid">
 	<% for(let i = 0; i < data.length; i++){ %>
 	<div class="card card<%= data[i].id %>">
 		<h4 class="card-title"><%= data[i].title %></h4>
