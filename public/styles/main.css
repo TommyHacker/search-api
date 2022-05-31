@@ -92,15 +92,16 @@
 .grid {
 	display: grid;
 	grid-template-columns: 33% 33% 33%;
-	border: solid black 1px;
 	align-items: center;
 	justify-content: center;
 }
-@media only screen and (max-width: 1200px) {
+
+/* @media only screen and (max-width: 1200px) {
 	.grid {
 		grid-template-columns: 50% 50%;
 	}
-}
+} */
+
 @media only screen and (max-width: 768px) {
 	.description {
 		width: 90%;
