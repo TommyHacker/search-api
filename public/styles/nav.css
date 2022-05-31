@@ -6,6 +6,7 @@ a {
 
 a:hover {
     text-decoration: underline;
+    cursor: pointer;
 }
 
 nav {
@@ -19,10 +20,13 @@ nav {
 }
 
 ul > a, ul > img, ul>button {
-    padding: 0;
-    margin: 1em;
+    padding: 0.1em;
+    margin: 0.5em;
 }
 
-.header-appIcon {
-    box-shadow: 0 0 10px aliceblue;
+.header-appIcon:hover {
+    box-shadow: 0 0 10px 0 gainsboro;
+    border-radius: 30px;
+    cursor: pointer;
 }
+
