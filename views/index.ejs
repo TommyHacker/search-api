@@ -2,16 +2,25 @@
 <%- layout("./layouts/boilerplate") %>
 
 <!-- header and template stuff in usual html is being brought in from the boilerplate.ejs, so you only need to work on page specific content! -->
-
+<link rel="stylesheet" href="/styles/body.css">
 <main>
-	<section>
-		<h1>Zoogle</h1>
-		<div>
-			<input type="text" />
-		</div>
-		<div class="button-container">
-			<button>Zoogle Search</button>
-			<button>Good times</button>
-		</div>
-	</section>
+
+    <section>
+        <h1 class="zoog-head">
+            <span style="color: #4885ed ;">Z</span>
+            <span style="color: #db3236 ;">o</span>
+            <span style="color: #f4c20d ;">o</span>
+            <span style="color: #4885ed ;">g</span>
+            <span style="color: #3cba54 ;">l</span>
+            <span style="color: #db3236 ;">e</span>
+        </h1>
+        <div class="input-container">
+            <input class="search-btn" type="text">
+        </div>
+        <div class="button-container">
+            <button>Zoogle Search</button>
+            <button>Good times</button>
+        </div>
+
+    </section>
 </main>
