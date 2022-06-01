@@ -13,4 +13,7 @@ describe('api tests', () => {
 	it('should return 200', (done) => {
 		request(app).get('/').expect(200, done);
 	});
+	it('should return 200', (done) => {
+		request(app).get('/').expect(200, done);
+	});
 });
