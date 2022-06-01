@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 section {
 	display: flex;
 	flex-direction: column;
@@ -5,11 +6,21 @@ section {
 	margin-top: 5vh;
 }
 
-h1 {
+.zoog-head {
 	margin-bottom: 5vh;
 	font-size: 5.5rem;
+	/* add font */
+	font-family: 'Raleway', sans-serif;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	font-weight: 700;
 }
-
+.oo {
+	display: flex;
+	letter-spacing: -20px;
+	padding-right: 18px;
+}
 .button-container {
 	padding-top: 3vh;
 }

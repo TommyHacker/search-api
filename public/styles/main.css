@@ -14,14 +14,14 @@ body {
 	transition: 0.3s ease-in-out;
 }
 
-/* .page-container { */
-/* width: 100vw;
+.page-container {
+	width: 100vw;
 	display: flex;
 	align-items: center;
 	flex-direction: column;
 	justify-content: space-around;
-	margin-top: 2rem; */
-/* } */
+	margin-top: 2rem;
+}
 /* .page-container .description {
 }
 
@@ -29,7 +29,7 @@ body {
 }
 
 .page-container .fact {
-} */
+ */
 
 .card {
 	width: 400px;
@@ -111,7 +111,8 @@ body {
 
 .dark,
 .dark a .dark .page-container,
-.dark nav ul a {
+.dark nav ul a,
+.dark .page-container .fact {
 	background: rgb(34, 34, 34);
 	color: rgb(228, 221, 196);
 	transition: 0.3s ease-in-out;
