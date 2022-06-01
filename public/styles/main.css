@@ -10,6 +10,10 @@
 	display: none;
 }
 
+body {
+	transition: 0.3s ease-in-out;
+}
+
 /* .page-container { */
 /* width: 100vw;
 	display: flex;
@@ -28,7 +32,7 @@
 } */
 
 .card {
-	width: 100%;
+	width: 400px;
 	box-shadow: 0px 0px 5px rgb(184, 184, 184);
 	border-radius: 8px;
 	padding: 1rem;
@@ -38,7 +42,7 @@
 	justify-content: space-around;
 	cursor: pointer;
 	transition: 0.3s;
-	margin: 10px;
+	margin: 3rem auto;
 }
 .card:hover {
 	background: rgb(65, 65, 65);
@@ -95,15 +99,39 @@
 	grid-template-columns: 33% 33% 33%;
 	align-items: center;
 	justify-content: center;
-	margin: 1rem;
+	margin: 1rem auto;
 }
-@media only screen and (max-width: 1200px) {
+
+/*  this is to append on a class list to create *dark mode*  */
+
+.dark a.btn {
+	background: white;
+	color: rgb(83, 83, 83);
+}
+
+.dark,
+.dark a .dark .page-container,
+.dark nav ul a {
+	background: rgb(34, 34, 34);
+	color: rgb(228, 221, 196);
+	transition: 0.3s ease-in-out;
+}
+
+/* this is the checkbox itself */
+#dark-mode {
+	position: absolute;
+	top: 25px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+@media only screen and (max-width: 1300px) {
 	.grid {
 		grid-template-columns: 50% 50%;
 	}
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 868px) {
 	.description {
 		width: 90%;
 	}
